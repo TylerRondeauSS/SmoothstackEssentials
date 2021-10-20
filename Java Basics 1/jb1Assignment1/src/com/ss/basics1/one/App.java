@@ -1,4 +1,4 @@
-package com.ss.basics.one;
+package com.ss.basics1.one;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -12,6 +12,7 @@ public class App {
             System.out.println();
         }
         System.out.println(".........");
+        System.out.println();
 
         //second pattern
         System.out.println("2)");
@@ -25,6 +26,7 @@ public class App {
             }
             System.out.println();
         }
+        System.out.println();
         
         //Third pattern
         System.out.println("3)");
@@ -40,6 +42,7 @@ public class App {
             System.out.println();
         }
         System.out.println("...........");
+        System.out.println();
 
         //Fourth pattern
         System.out.println("4)");
