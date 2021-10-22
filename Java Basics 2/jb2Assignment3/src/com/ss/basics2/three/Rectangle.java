@@ -2,21 +2,21 @@ package com.ss.basics2.three;
 
 public class Rectangle implements Shape{
 
-    private int length, width;
+    private Integer length, width;
 
     public Rectangle(){
         length = 0;
         width = 0;
     }
 
-    public Rectangle(int len, int wid){
+    public Rectangle(Integer len, Integer wid){
         length = len;
         width = wid;
     }
 
     @Override
-    public double calculateArea() {
-        return length * width;
+    public Double calculateArea() {
+        return (double) (length * width);
     }
 
     @Override
@@ -24,19 +24,19 @@ public class Rectangle implements Shape{
         System.out.println("The area of your rectangle is : " + calculateArea());
     }
 
-    public void setLength(int len){
+    public void setLength(Integer len){
         length = len;
     }
 
-    public int getLength(){
+    public Integer getLength(){
         return length;
     }
 
-    public void setWidth(int wid){
+    public void setWidth(Integer wid){
         width = wid;
     }
 
-    public int getWidth(){
+    public Integer getWidth(){
         return width;
     }
     

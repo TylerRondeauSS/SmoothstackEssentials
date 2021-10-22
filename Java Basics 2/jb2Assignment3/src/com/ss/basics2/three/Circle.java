@@ -1,18 +1,18 @@
 package com.ss.basics2.three;
 
 public class Circle implements Shape{
-    private int radius;
+    private Integer radius;
 
     public Circle(){
         radius = 0;
     }
 
-    public Circle(int rad){
+    public Circle(Integer rad){
         radius = rad;
     }
 
     @Override
-    public double calculateArea() {
+    public Double calculateArea() {
         return (this.radius*this.radius)*Math.PI;
     }
 
@@ -21,11 +21,11 @@ public class Circle implements Shape{
         System.out.println("The area of your circle is : " + calculateArea());
     }
 
-    public void setRadius(int rad){
+    public void setRadius(Integer rad){
         radius = rad;
     }
 
-    public int getRadius(){
+    public Integer getRadius(){
         return radius;
     }
     

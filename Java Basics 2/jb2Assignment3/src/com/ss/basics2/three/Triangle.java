@@ -2,21 +2,21 @@ package com.ss.basics2.three;
 
 public class Triangle implements Shape{
     
-    private int base, height;
+    private Integer base, height;
 
     public Triangle(){
         height = 0;
         base = 0;
     }
 
-    public Triangle(int hi, int bse){
+    public Triangle(Integer hi, Integer bse){
         height = hi;
         base = bse;
     }
 
     @Override
-    public double calculateArea() {
-        return (height * base) / 2;
+    public Double calculateArea() {
+        return (double) ((height * base) / 2);
     }
 
     @Override
@@ -24,19 +24,19 @@ public class Triangle implements Shape{
         System.out.println("The area of your Trinagle is : " + calculateArea());
     }
 
-    public void setHeight(int hi){
+    public void setHeight(Integer hi){
         height = hi;
     }
 
-    public int getHeight(){
+    public Integer getHeight(){
         return height;
     }
 
-    public void setBase(int bse){
+    public void setBase(Integer bse){
         base = bse;
     }
 
-    public int getBase(){
+    public Integer getBase(){
         return base;
     }
     

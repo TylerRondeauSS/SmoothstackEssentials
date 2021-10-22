@@ -4,9 +4,11 @@ import java.io.File;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        int depth = 0;
+        //Create an instance to run the non-static method
+        App runPrintDir = new App();
+        Integer depth = 0;
         //Path to the folder we want to print the contents of
-        String dirPath = "D:\\Downloads\\Personal\\Smoothstack\\SmoothstackEssentials\\Java Basics 3\\testFiles";
+        final String dirPath = "D:\\Downloads\\Personal\\Smoothstack\\SmoothstackEssentials\\Java Basics 3\\testFiles";
         //Open the directory indicated in the path above
         File dir = new File(dirPath);
         //make sure the location exists and is a directory then make an array of all files inside it
@@ -14,11 +16,10 @@ public class App {
             File dirs[] = dir.listFiles();
             System.out.println("Following is a list of all Directories / Files from path : " + dir);
             System.out.println();
-            printDir(dirs,depth);
+            runPrintDir.printDir(dirs,depth);
         }
     }
-    //Method has to be static because it's called directly from main, which is static. Static methods can only directly call other static methods. 
-    static void printDir(File[] dir, int depth){
+    public void printDir(File[] dir, Integer depth){
         for(File step: dir){
             //For loop to add tabs for subdirectories using a variable depth to indicate how deep we are
             for(int i = 0; i < depth; i++) System.out.print("\t");
