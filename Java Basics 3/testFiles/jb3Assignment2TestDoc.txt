@@ -1,1 +1,3 @@
-Appended text following: 
+I added text to the file!
+I added text to the file again!
+I added text to the file again!
